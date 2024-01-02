@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+:root {
+  --bg-color: #c4b7a7;
+  --btn-primary: #c4b7a7;
+  --btn-secondary: #958b82;
+  --btn-tertiary: #908b92;
+  --btn-highlight: #dfc175;
+  --btn-result: #9c5c51;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Silkscreen", sans-serif;
+  text-align: center;
+
+  background: var(--bg-color);
+  color: #000000;
+}
+
+.air-flow {
+  opacity: 0.4;
+  width: 280px;
+  height: 60px;
+  margin: 3rem auto;
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    #000000 40%,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(0, 0, 0, 0) 90%,
+    #000000 90%,
+    #000000 100%,
+    #000000 100%
+  );
+  background-size: auto;
+  background-size: 12px;
+}
+
+#entry {
+  font-size: 1.5rem;
+  font-family: "Silkscreen", sans-serif;
+  text-align: right;
+
+  padding: 2rem;
+  margin: 1rem 0 6rem;
+  border-radius: 0.7rem;
+
+  outline: none;
+  border: none;
+  background: #171717;
+  color: #0cc86d;
+}
+
+.keyboard {
+  width: min(25rem, 50%);
+  margin: 0 auto;
+}
+
+.keyboard div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 2rem;
+}
+
+.keyboard button {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+
+  margin: 3px;
+  margin-right: 0;
+  width: 62px;
+  height: 62px;
+
+  border: none;
+  border-radius: 0.3rem;
+
+  transition: all 0.1s;
+
+  font-size: 2.5rem;
+  
+  background: linear-gradient(145deg, #b0a596, #d2c4b3);
+  box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, 0.75);
+}
+
+.basic-operations button,
+.calculator-reserved button {
+  background: var(--btn-secondary);
+}
+
+.constant-numbers button {
+  background: var(--btn-highlight);
+  font-family: "Times New Roman", Times, serif;
+}
+
+#result-key {
+  background: var(--btn-result);
+  width: 100%;
+}

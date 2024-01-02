@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script type="text/javascript" src="./main.js" defer=""></script>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <main>
+      <div class="calculator">
+        <div class="air-flow"></div>
+
+        <h3>WO-2003</h3>
+        <input type="text" id="entry" disabled="">
+
+        <div class="keyboard">
+          <div class="basic-operations">
+            <button onclick="calculator.setOperation('+')">+</button>
+            <button onclick="calculator.setOperation('-')">-</button>
+            <button onclick="calculator.setOperation('*')">x</button>
+            <button onclick="calculator.setOperation('/')">÷</button>
+          </div>
+          <div class="numeric-keyboard">
+            <button onclick="calculator.insertNumber(1)">1</button>
+            <button onclick="calculator.insertNumber(2)">2</button>
+            <button onclick="calculator.insertNumber(3)">3</button>
+            <button onclick="calculator.insertNumber(4)">4</button>
+            <button onclick="calculator.insertNumber(5)">5</button>
+            <button onclick="calculator.insertNumber(6)">6</button>
+            <button onclick="calculator.insertNumber(7)">7</button>
+            <button onclick="calculator.insertNumber(8)">8</button>
+            <button onclick="calculator.insertNumber(9)">9</button>
+            <button onclick="calculator.insertNumber(0)">0</button>
+            <button onclick="calculator.insertNumber('00')">00</button>
+            <button onclick="calculator.insertNumber('.')">.</button>
+          </div>
+          <div class="other-operations">
+            <button onclick="calculator.entryOperation('pow2')">
+              x<sup>2</sup>
+            </button>
+            <button onclick="calculator.entryOperation('pow3')">
+              x<sup>3</sup>
+            </button>
+            <button onclick="calculator.entryOperation('sqrt')">√</button>
+            <button onclick="calculator.entryOperation('cbrt')">∛</button>
+            <button onclick="calculator.entryOperation('cos')">cos</button>
+            <button onclick="calculator.entryOperation('sin')">sin</button>
+            <button onclick="calculator.entryOperation('log')">log</button>
+          </div>
+          <div class="constant-numbers">
+            <button onclick="calculator.setEntry(Math.PI)">π</button>
+            <button onclick="calculator.setEntry(Math.E)">e</button>
+            <button onclick="calculator.setEntry(6.28318)">τ</button>
+          </div>
+          <div class="calculator-reserved">
+            <button onclick="calculator.clearCalc()">C</button>
+            <button onclick="calculator.setEntry('')">CE</button>
+            <button onclick="calculator.backspace()">←</button>
+            <button onclick="calculator.calculate()" id="result-key">=</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+  </body>
+
+</html>
