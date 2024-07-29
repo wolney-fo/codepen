@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Challenge #3 - Florin Pop</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Choose a trial plan</legend>
+
+        <div class="radio-wrapper">
+          <div>
+            <input
+              type="radio"
+              name="plan"
+              id="plan-standard"
+              value="plan-standard"
+            />
+            <label for="plan-standard">Standard</label>
+          </div>
+
+          <p>
+            5 TB of space with easy-to-use team management and collaboration
+            tools.
+          </p>
+        </div>
+
+        <div class="radio-wrapper">
+          <div>
+            <input
+              type="radio"
+              name="plan"
+              id="plan-advanced"
+              value="plan-advanced"
+              checked
+            />
+            <label for="plan-advanced">Advanced</label>
+          </div>
+
+          <p>
+            As much space as your team needs with sophisticated admin, audit,
+            secutity and integration capabilities.
+          </p>
+        </div>
+
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms"
+            >I agree to the <a href="#">Agreement and Terms</a>. Find out more
+            about how we use and protect your data in our
+            <a href="#">Privacy Policy</a>.</label
+          >
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="mailing" id="mailing" />
+          <label for="mailing"
+            >I'd like to recive direct marketing e-mail updates.</label
+          >
+        </div>
+
+        <button type="submit">Start free trial</button>
+        <small>No credit card needed</small>
+      </fieldset>
+    </form>
+  </body>
+</html>
